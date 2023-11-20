@@ -10,6 +10,23 @@
   vertical-align: baseline;
 }
 
+.container {
+  width: min(100% - 40px, 1280px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
