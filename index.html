@@ -9,8 +9,8 @@
         <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/style/index.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/style/reset.css" type="text/css" media="all">
-        <script src="./assets/script/index.js" defer></script>
-        <script src="./assets/script/utility.js" defer></script>
+        <script src="./assets/script/index.mjs" type="module"></script>
+        <script src="./assets/script/utility.js" type="module"></script>
         <title>Alarm Clock</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +20,17 @@
     <body>
         <div class="container center">
             <div class="main-time">
-                <h1><span class="hours">TIME</span>:<span class="minutes">HERE</span></h1>
+                <h1 class="time-display"></h1>
             </div>
-            <i class="fa-solid fa-bell"></i>
+            <div class="icon">
+                <i class="fa-solid fa-bell"></i><p class="alarm-time"></p>
+            </div>
             <div class="inputs-submit">
                 <input type="number" pattern="\d*" inputmode="numeric" placeholder="HH">
                 <input type="number" pattern="\d*" inputmode="numeric" placeholder="MM">
                 <button>Set Alarm</button>
             </div>
-            <p>Please note that this clock uses 24 hour formatting :)</p>
+            <p class="note">Please note that this clock uses 24 hour formatting :)</p>
         </div>
     </body>
 </html>

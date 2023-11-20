@@ -28,7 +28,7 @@ i {
 }
 
 input[type="number"] {
-    -moz-appearance: textfield; /* Firefox */
+    -moz-appearance: textfield;
     appearance: textfield;
   }
   
@@ -63,7 +63,7 @@ button:hover {
     background-color: var(--col-main-darker-blue);
 }
 
-p {
+p.note {
     color: var(--col-light-grey);
     margin-top: 30px;
 }
