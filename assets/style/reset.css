@@ -27,6 +27,7 @@
   align-items: center;
   gap: 10px;
 }
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
