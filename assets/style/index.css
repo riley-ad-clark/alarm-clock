@@ -12,6 +12,21 @@
     --bg-dark-mode-lightest: #272b3b;
 }
 
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
 body {
     background-color: var(--bg-dark-mode-main);
     color: var(--col-white);
@@ -74,10 +89,12 @@ p.note {
 
 .input-error {
     border: 2px solid rgb(214, 11, 11);
+    transition: 0.3s ease-in-out;
   }
   
 .input-success {
     border: 2px solid rgb(8, 141, 8);
+    transition: 0.3s ease-in-out;
   }
 
 .icon {
@@ -87,4 +104,10 @@ p.note {
 
 .alarm-time {
     margin: 3px 0 0 10px;
+}
+
+audio {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
 }
