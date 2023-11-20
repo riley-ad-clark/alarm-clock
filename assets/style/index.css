@@ -47,7 +47,7 @@ input {
     border-radius: 10px;
     background-color: var(--bg-dark-mode-lightest);
     color: var(--col-white);
-    border: 1px solid aqua;
+    border: 2px solid aqua;
 }
 
 button {
@@ -66,4 +66,25 @@ button:hover {
 p.note {
     color: var(--col-light-grey);
     margin-top: 30px;
+}
+
+.blank-border {
+    border: 2px solid transparent;
+}
+
+.input-error {
+    border: 2px solid rgb(214, 11, 11);
+  }
+  
+.input-success {
+    border: 2px solid rgb(8, 141, 8);
+  }
+
+.icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.alarm-time {
+    margin: 3px 0 0 10px;
 }
