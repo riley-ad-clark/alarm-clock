@@ -10,7 +10,7 @@ const timeDisplay = select('.time-display');
 const alarmSound = new Audio('./assets/audio/alarm.wav');
 
 function updateTime() {
-    const currentTime = new Date().toLocaleTimeString().substring(0, 4);
+    const currentTime = new Date().toLocaleTimeString().substring(0, 5);
     timeDisplay.innerText = currentTime;
     playAlarm();
 }
