@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
+    <body class="fade-in">
         <div class="container center">
             <div class="main-time">
                 <h1 class="time-display"></h1>
@@ -31,6 +31,7 @@
                 <button class="set-alarm">Set Alarm</button>
             </div>
             <p class="note">Please note that this clock uses 24 hour formatting :)</p>
+            <audio id="alarmSound" src="./assets/audio/alarm.wav" preload="auto" controls="false"></audio>
         </div>
     </body>
 </html>
